@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleone.css') }}">
+
+</head>
+<body>
+  <form method="post" action="/autenticar">
+        <div class="center">
+            <h1>Bem vindo</h1>
+        </div>
+        <div class="login"> 
+          <label for="exampleInputEmail1">E-mail</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu e-mail" name="txtEmail">
+        
+        </div>
+        <div class="login">
+          <label for="exampleInputPassword1">Senha</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="txtSenha">
+        </div>
+        <button type="submit" style="position: relative;margin: 0 auto;display: flex;top: 30px;margin-bottom: 30px" class="btn btn-primary">Entrar</button>
+      </form>    
+</body>
+</html>

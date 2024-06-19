@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Empresarial</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="center">
+        <h1 class="Inicio">Área Administrativa</h1>
+        
+        <div class="button">
+            <form action="/agendamentos" method="get">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" style="margin-bottom: 30px;">Agendamentos</button>
+                </div>
+            </form>
+
+            <form action="/historico" method="get">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" style="margin-bottom: 30px;">Histórico</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

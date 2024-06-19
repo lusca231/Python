@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifique os agendamentos</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleone.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+
+    {% extends "estrutura.html" %}
+
+    {% block title %}Verifique os agendamentos{% endblock %}
+
+    {% block conteudo %}
+    <div class="center">
+        <h1>{{ descricao_agendamentos }}</h1>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styleone.css') }}">
+
+        <table class="table table-hover">
+            <thead class="table-aliceblue">
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    <th>Veículo</th>
+                    <th>Placa</th>
+                    <th>Serviço</th>
+                    <th>Data</th>
+                    <th>Hora</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for cliente in todos_agendamentos %}
+                <tr>
+                    <td>{{ cliente.nome_cliente }}</td>
+                    <td>{{ cliente.cpf_cliente }}</td>
+                    <td>{{ cliente.telefone_cliente }}</td>
+                    <td>{{ cliente.email_cliente }}</td>
+                    <td>{{ cliente.veiculo_cliente }}</td>
+                    <td>{{ cliente.placa_veiculo }}</td>
+                    <td>{{ cliente.tipo_servico }}</td>
+                    <td>{{ cliente.data_agendamento }}</td>
+                    <td>{{ cliente.hora_agendamento }}</td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Editar e Excluir">
+                            <a class="btn btn-secondary" style="background-color: #0d6efd; border-color: #0d6efd;" href="{{ url_for('editar_agendamento', id=cliente.id_cliente) }}">Editar</a>
+                            <span style="margin-right: 10px;"></span> <!-- Espaço entre os botões -->
+                            <a class="btn btn-secondary" style="background-color: #0d6efd; border-color: #0d6efd;" href="{{ url_for('excluir_agendamento', id=cliente.id_cliente) }}">Excluir</a>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endblock %}
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+{% extends "estrutura.html" %}
+
+{% block conteudo %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styleone.css') }}">
+
+<h1>Editar Agendamento</h1>
+
+<form method="post" action="/atualizar">
+    <input type="hidden" name="txtId" value="{{ clientes.id_cliente }}">
+
+    <div class="mb-3">
+        <label class="form-label">Nome</label>
+        <input class="form-control" type="text" name="txtNome" value="{{ clientes.nome_cliente }}">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">CPF</label>
+        <input class="form-control" type="text" name="txtCPF" value="{{ clientes.cpf_cliente }}">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Telefone</label>
+        <input class="form-control" type="text" name="txtTel" value="{{ clientes.telefone_cliente }}">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input class="form-control" type="text" name="txtEmail" value="{{ clientes.email_cliente }}">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Veículo</label>
+        <input class="form-control" type="text" name="txtVel" value="{{ clientes.veiculo_cliente }}">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Placa</label>
+        <input class="form-control" type="text" name="txtPlaca" value="{{ clientes.placa_veiculo }}">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Serviço</label>
+        <input class="form-control" type="text" name="txtServ" value="{{ clientes.tipo_servico }}">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Data</label>
+        <input class="form-control" type="text" name="txtData" value="{{ clientes.data_agendamento }}">
+    </div>
+    
+    <div class="mb-3">
+        <label class="form-label">Hora</label>
+        <input class="form-control" type="text" name="txtHora" value="{{ clientes.hora_agendamento }}">
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">Atualizar Agendamento</button>
+    </div>
+</form>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pagina Principal </title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+    <div class="center">
+        <h1 class="Inicio">Bem Vindo ao JetMechs</h1> 
+
+        <div class="button">
+            <form action="/clientes">
+                <div class="form-group">
+                    <label for="exampleInputEmail1" >Clique aqui se for um cliente</label>
+                    <button type="submit" style="position: relative;margin: 0 auto;display: flex;top: 10px;margin-bottom: 30px; text-align: right" class="btn btn-primary">Agendamento</button>
+                </div>
+            </form>
+
+            <form action="/login">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Clique aqui se for a JetMechs</label>
+                    <button type="submit" style="position: relative;margin: 0 auto;display: flex;top: 10px;margin-bottom: 30px; text-align: right;" class="btn btn-primary">Empresa</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastros Clientes</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleone.css') }}">
+</head>
+<body>
+    <div class="center">
+        <h1>Cadastre-se</h1>
+        <form method="post" action="/adicionar">
+            <div class="mensagem">
+                <label for="txtNome">Digite seu nome:</label>
+                <input id="txtNome" class="form-control" type="text" name="txtNome" placeholder="Nome completo">
+            </div>
+
+            <div class="mensagem">
+                <label for="txtCPF">CPF:</label>
+                <input id="txtCPF" class="form-control" type="text" name="txtCPF" placeholder="CPF completo">
+            </div>
+
+            <div class="mensagem">
+                <label for="txtTel">Telefone:</label>
+                <input id="txtTel" class="form-control" type="text" name="txtTel" placeholder="tel celular">
+            </div>
+
+            <div class="mensagem">
+                <label for="txtEmail">Email:</label>
+                <input id="txtEmail" class="form-control" type="text" name="txtEmail" placeholder="Digite seu email">
+            </div>
+
+            <div class="mensagem">
+                <label for="txtVel">Qual seu veículo:</label>
+                <input id="txtVel" class="form-control" type="text" name="txtVel" placeholder="ex: carro ou moto">
+            </div>
+
+            <div class="mensagem">
+                <label for="txtPlaca">Placa do veículo:</label>
+                <input id="txtPlaca" class="form-control" type="text" name="txtPlaca" placeholder="ex: ABC1234">
+            </div>
+
+            <div class="mensagem">
+                <label for="txtServ">Serviço:</label>
+                <input id="txtServ" class="form-control" type="text" name="txtServ" placeholder="Lavagem ou Mecânica">
+            </div>
+
+            <div class="mensagem">
+                <label for="txtData">Data:</label>
+                <input id="txtData" class="form-control" type="text" name="txtData" placeholder="Digite a data que quer fazer o serviço">
+            </div>
+
+            <div class="mensagem">
+                <label for="txtHora">Horário:</label>
+                <input id="txtHora" class="form-control" type="text" name="txtHora" placeholder="Digite qualquer horário entre 10:00AM até 22:00PM">
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="position: relative; margin: 0 auto; display: flex; top: 10px; margin-bottom: 10px;">Cadastre-se</button>
+        </form>
+    </div>
+</body>
+</html>

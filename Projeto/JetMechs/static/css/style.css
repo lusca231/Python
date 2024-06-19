@@ -1,0 +1,132 @@
+/* Reset de margens e preenchimentos padrão e define o box-sizing para border-box em todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    /* Define a imagem de fundo */
+    background-image: url('../css/img/fundo_0.2.png');
+    background-size: cover; /* Cobrir toda a área de fundo */
+    background-repeat: no-repeat; /* Não repetir a imagem de fundo */
+    height: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: aliceblue;
+}
+
+/* Estilos para classes específicas */
+
+/* Estilos para a classe .Inicio */
+.Inicio {
+    margin-top: 10px; /* Define a margem superior */
+    margin-left: 30px; /* Define a margem esquerda */
+}
+
+/* Estilos para a classe .adm */
+.adm {
+    margin-top: 10px; /* Define a margem superior */
+    margin-left: 30px; /* Define a margem esquerda */
+    color: aliceblue; /* Define a cor do texto */
+}
+
+/* Estilos para a classe .center */
+.center {
+    margin-left: 0px; /* Remove a margem esquerda */
+    flex-direction: column; /* Define a direção da flexbox como coluna */
+    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 2000px; /* Define a largura máxima */
+    color: aliceblue; /* Define a cor do texto */
+}
+
+/* Estilos para a classe .button */
+.button {
+    flex-direction: column; /* Define a direção da flexbox como coluna */
+    align-items: flex-end; /* Alinha os itens no final do eixo transversal */
+    position: absolute; /* Define a posição como absoluta */
+    right: 300px; /* Define a distância da direita */
+    top: 250px; /* Define a distância do topo */
+}
+
+/* Estilos para botões */
+.btn {
+    width: 150px; /* Define a largura */
+    justify-content: center; /* Alinha o conteúdo ao centro */
+}
+
+/* Estilos para o grupo de formulário */
+.form-group {
+    color: black; /* Define a cor do texto */
+    margin-top: 30px; /* Define a margem superior */
+    width: 150px; /* Define a largura */
+    justify-content: center; /* Alinha o conteúdo ao centro */
+    margin-inline-end: 20px; /* Define a margem à direita */
+    display: block; /* Exibe como bloco */
+    flex-direction: column; /* Define a direção da flexbox como coluna */
+}
+
+/* Estilos para o rótulo do grupo de formulário */
+.form-group label {
+    margin-bottom: 10px; /* Define a margem inferior */
+    display: block; /* Exibe como bloco */
+    flex-direction: column; /* Define a direção da flexbox como coluna */
+    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 200px; /* Define a largura máxima */
+}
+
+/* Estilos para a mensagem */
+.mensagem {
+    display: block; /* Exibe como bloco */
+    flex-direction: column; /* Define a direção da flexbox como coluna */
+    text-align: left; /* Alinha o texto à esquerda */
+    color: rgb(0, 0, 0); /* Define a cor do texto */
+    margin: auto; /* Centraliza horizontalmente */
+    width: 50%; /* Define a largura */
+    margin-top: 60px; /* Define a margem superior */
+    width: 100%; /* Define a largura total */
+    max-width: 800px; /* Define a largura máxima */
+    margin-bottom: 30px; /* Define a margem inferior */
+}
+
+/* Estilos para a área de login */
+.login {
+    flex-direction: column; /* Define a direção da flexbox como coluna */
+    margin-left: 30px; /* Define a margem esquerda */
+    max-width: 800px; /* Define a largura máxima */
+    color: rgb(0, 0, 0); /* Define a cor do texto */
+    margin: auto; /* Centraliza horizontalmente */
+    width: 100%; /* Define a largura total */
+    margin-top: 100px; /* Define a margem superior */
+    margin-bottom: 30px; /* Define a margem inferior */
+}
+
+/* Estilos para a lista de clientes */
+.Clientes {
+    margin-top: 20px; /* Define a margem superior */
+    margin-left: 30px; /* Define a margem esquerda */
+    color: rgb(0, 0, 0); /* Define a cor do texto */
+    top: 30px; /* Define a distância do topo */
+}
+
+/* Estilos para a tabela */
+.table {
+    color: darkcyan; /* Define a cor do texto */
+    margin-top: 40px; /* Define a margem superior */
+    flex-direction: column; /* Define a direção da flexbox como coluna */
+    max-width: 500px; /* Define a largura máxima */
+    margin-left: auto; /* Alinha a tabela ao centro horizontalmente */
+    margin-right: auto; /* Alinha a tabela ao centro horizontalmente */
+}
+
+.titulo {
+    margin-top: 10px;
+    margin: auto;
+    width: 30%;
+    color: aliceblue;
+    margin-left: 30px;
+    top: 30px;
+}

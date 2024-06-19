@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historico</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+    <div class="Clientes">
+        <h1>Historico do Cliente</h1>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Serviço</th>
+                <th scope="col">Data</th>
+                <th scope="col">Horário</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <th scope="row">Daniel</th>
+                <td>Lava rápido</td>
+                <td>30.05</td>
+                <td>13:45</td>
+              </tr>
+              <tr>
+                <th scope="row">Daniel</th>
+                <td>Mecanica</td>
+                <td>25.05</td>
+                <td>10:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Daniel</th>
+                <td>Lava Rapido</td>
+                <td>28.03</td>
+                <td>15:30</td>
+              </tr>
+            </tbody>
+          </table>
+
+    </div>
+    
+</body>
+</html>
